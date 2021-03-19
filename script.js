@@ -11,7 +11,7 @@ for(let i=0; i<notes.length;i++) {
 }
 
 function keydown(event) {
-    audio.src = '/resources/'+ event.target.value +'.mp3';
+    audio.src = './resources/'+ event.target.value +'.mp3';
 }
 
 notes.forEach(function(note) {
