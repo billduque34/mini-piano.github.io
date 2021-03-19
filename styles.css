@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.main-screen {
+    display: inline-block;
+    padding: 20px;
+    background-color: rgb(122, 122, 122);
+    border: 5px solid black;
+}
+
+.keys {
+    display: grid;
+    width: 450px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-column-gap: 5px;
+    border: 5px solid black;
+    height: 200px;
+    padding: 0 5px 5px 5px;
+    background-color: rgb(165, 165, 165);
+}
+
+.key {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-grow: 1;
+    background-color: white;
+    border: 3px solid black;
+    padding-bottom: 10px;
+    cursor: pointer;
+    box-shadow: 3px 3px 1px black;
+    font-family: Courier;
+    font-weight: bolder;
+    font-size: 1.4rem;
+}
+
+#key-c:active, #key-d:active, 
+#key-e:active, #key-f:active,
+#key-g:active, #key-a:active,
+#key-b:active, #key-cs:active {
+    box-shadow: none;
+}
+
+.key-sharp {
+    display: flex;
+    position: absolute;
+    background-color: black;
+    width: 30px;
+    height: 120px;
+}
+
+#key-sharp-c {
+    left: 75px;
+}
+
+#key-sharp-d {
+    left: 130px;
+}
+
+#key-sharp-f {
+    left: 245px;
+}
+
+#key-sharp-g {
+    left: 300px;
+}
+
+#key-sharp-a {
+    left: 358px;
+}
+
+.title {
+    margin-top: 30px;
+    display: block;
+    text-align: center;
+    font-size: 4.5rem;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
